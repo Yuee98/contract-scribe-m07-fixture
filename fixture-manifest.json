@@ -37,7 +37,7 @@
   "oracle": {
     "path": "expected-payload.json",
     "format": "canonical semantic-payload.json bytes",
-    "sha256": "0441e29d34f602d1884d9ebf252838a7d16aad46646b6dce1f1acb55459a1118",
+    "sha256": "df8202a209fc0005fe897779fa97c9c44212140f633229414a9271f739338fdc",
     "correctionRule": "A correction or supersession creates a new immutable fixture commit and evidence instance; the pinned oracle is never edited in place and never replaced from runner output."
   },
   "protectedFiles": {
@@ -49,7 +49,7 @@
     "SampleApp/SampleApp.csproj": "3c15d95c5233fe5ac459f1ab0251aad6df44da845ec5e818b8b7ed934b49d1c7",
     "SampleLibrary/Catalog.cs": "35ca6c4b660d4efff488362d51757f73643e889e39299b6a9f7fd01ba86b9e4f",
     "SampleLibrary/SampleLibrary.csproj": "584b6643de6d112d42fe26fe99254b35f4482325404f8e76a65fc0ea0eada3ad",
-    "expected-payload.json": "0441e29d34f602d1884d9ebf252838a7d16aad46646b6dce1f1acb55459a1118",
+    "expected-payload.json": "df8202a209fc0005fe897779fa97c9c44212140f633229414a9271f739338fdc",
     "global.json": "0b217c0d631cd67016fb292aecee77c824ae2614c33bbdcfd7450e40fbdb6b1c"
   },
   "protectedFilesNote": "The fixture-manifest.json self-hash is recorded by the consumer manifest because including a manifest hash inside itself would be circular.",

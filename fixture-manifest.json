@@ -1,0 +1,35 @@
+{
+  "formatVersion": "contractscribe-m0.7-fixture-v1",
+  "fixtureId": "contractscribe-m07-independent-v1",
+  "independence": {
+    "sourceAuthoredFromScratch": true,
+    "oracleAuthoredBeforeSelectedBaselineExecution": true,
+    "oracleDerivedFromRunnerOutput": false,
+    "m04SourceCopied": false,
+    "m04OracleCopied": false,
+    "commonalityReason": "The frozen runner requires the SampleApp/SampleLibrary two-project envelope and one SampleApp-to-SampleLibrary reference."
+  },
+  "solution": "Sample.sln",
+  "projectGraph": {
+    "projects": ["SampleApp", "SampleLibrary"],
+    "references": [{ "from": "SampleApp", "to": "SampleLibrary" }]
+  },
+  "compilation": {
+    "targetFramework": "net10.0",
+    "language": "C#",
+    "langVersion": "latest",
+    "nullable": "enable",
+    "implicitUsings": "disable",
+    "packageReferences": []
+  },
+  "oracle": {
+    "path": "expected-payload.json",
+    "format": "canonical semantic-payload.json bytes",
+    "sha256": "0441e29d34f602d1884d9ebf252838a7d16aad46646b6dce1f1acb55459a1118"
+  },
+  "preparation": [
+    "dotnet restore Sample.sln",
+    "dotnet build Sample.sln --configuration Release --no-restore"
+  ],
+  "offlineExecutionBeginsAfter": "The fixture restore and build have completed and the already-built ContractScribe host is ready."
+}
